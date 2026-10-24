@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+(() => {
+  try {
+    const saved = localStorage.getItem("bw-theme");
+    const h = new Date().getHours();
+    document.documentElement.dataset.theme = saved || ((h >= 18 || h < 6) ? "dark" : "light");
+  } catch (e) {}
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use · Blue Wave Infra</title>
+<meta name="description" content="Terms of use for the Blue Wave Infra website, bluewaveinfra.in.">
+<link rel="canonical" href="https://bluewaveinfra.in/terms.html">
+<link rel="icon" type="image/webp" href="img/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;600&display=swap">
+<style>
+:root{--bg:#f3f7fb; --surface:#ffffff; --ink:#0a1a31; --muted:#4e6079; --line:#d6e2ee; --brand:#0b5cc4;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif; --f-body:"Figtree", "Segoe UI", system-ui, sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#05101e; --surface:#0b1e35; --ink:#e7f0fa; --muted:#93a7c0; --line:#183253; --brand:#3b8ff2; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#05101e; --surface:#0b1e35; --ink:#e7f0fa; --muted:#93a7c0; --line:#183253; --brand:#3b8ff2; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--f-body)}
+.wrap{max-width:780px;margin:0 auto;padding:28px 16px 64px}
+.top{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--f-display);font-weight:800;letter-spacing:-.01em}
+.top img{width:40px;height:auto}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:clamp(20px,4vw,40px);margin-top:24px}
+h1,h2{font-family:var(--f-display);line-height:1.15;letter-spacing:-.02em}
+h1{font-size:clamp(30px,5vw,42px);margin:0 0 6px}
+h2{font-size:20px;margin:32px 0 8px}
+p,li{color:var(--muted)}
+strong{color:var(--ink)}
+a{color:var(--brand)}
+.meta{font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="./"><img src="img/logo.webp" alt="" width="40" height="38">Blue Wave Infra</a>
+  <main class="card">
+    <h1>Terms of Use</h1>
+    <p class="meta">Last updated: 24 October 2026</p>
+
+    <p>By using bluewaveinfra.in you agree to these terms. If you do not agree, please do not use the site.</p>
+
+    <h2>Information on this site</h2>
+    <p>Product descriptions, specifications, images, capacities and the Park Planner's figures are for general guidance only. Final designs, specifications, prices and timelines are confirmed only in a written quotation or contract from Blue Wave Infra, and depend on your site survey and requirements.</p>
+
+    <h2>Park Planner</h2>
+    <p>The Park Planner is an indicative sketching tool. Its land use, rider capacity and water demand figures are estimates and are not an engineering design. A scaled layout is prepared by our team after review.</p>
+
+    <h2>Intellectual property</h2>
+    <p>The content on this site, including text, 3D renders, photographs, layouts and the Blue Wave Infra name and logo, belongs to Blue Wave Infra or is used with permission. Please do not copy or reuse it without our written consent.</p>
+
+    <h2>Enquiries</h2>
+    <p>Submitting a form or message does not create a contract. Please share accurate contact and project details so we can respond properly. How we handle your details is covered in our <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>Third-party services</h2>
+    <p>Some features open or rely on third-party services such as WhatsApp. Their own terms and policies apply when you use them.</p>
+
+    <h2>Liability</h2>
+    <p>We work to keep the site accurate and available, but we do not guarantee it is error-free or uninterrupted. To the extent the law allows, Blue Wave Infra is not liable for losses arising from use of the site.</p>
+
+    <h2>Governing law</h2>
+    <p>These terms are governed by the laws of India. Courts in Pune, Maharashtra have jurisdiction.</p>
+
+    <h2>Contact</h2>
+    <p>Blue Wave Infra, Puraniks Aldea Phase 1, Pune, Maharashtra 411045 ·
+    <a href="mailto:amitbhandare1007@gmail.com">amitbhandare1007@gmail.com</a> ·
+    <a href="tel:+918806324144">+91 88063 24144</a></p>
+  </main>
+</div>
+</body>
+</html>

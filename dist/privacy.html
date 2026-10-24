@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+(() => {
+  try {
+    const saved = localStorage.getItem("bw-theme");
+    const h = new Date().getHours();
+    document.documentElement.dataset.theme = saved || ((h >= 18 || h < 6) ? "dark" : "light");
+  } catch (e) {}
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Blue Wave Infra</title>
+<meta name="description" content="How Blue Wave Infra collects, uses and protects the personal data you share through bluewaveinfra.in.">
+<link rel="canonical" href="https://bluewaveinfra.in/privacy.html">
+<link rel="icon" type="image/webp" href="img/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;600&display=swap">
+<style>
+:root{--bg:#f3f7fb; --surface:#ffffff; --ink:#0a1a31; --muted:#4e6079; --line:#d6e2ee; --brand:#0b5cc4;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif; --f-body:"Figtree", "Segoe UI", system-ui, sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#05101e; --surface:#0b1e35; --ink:#e7f0fa; --muted:#93a7c0; --line:#183253; --brand:#3b8ff2; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#05101e; --surface:#0b1e35; --ink:#e7f0fa; --muted:#93a7c0; --line:#183253; --brand:#3b8ff2; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--f-body)}
+.wrap{max-width:780px;margin:0 auto;padding:28px 16px 64px}
+.top{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--f-display);font-weight:800;letter-spacing:-.01em}
+.top img{width:40px;height:auto}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:clamp(20px,4vw,40px);margin-top:24px}
+h1,h2{font-family:var(--f-display);line-height:1.15;letter-spacing:-.02em}
+h1{font-size:clamp(30px,5vw,42px);margin:0 0 6px}
+h2{font-size:20px;margin:32px 0 8px}
+p,li{color:var(--muted)}
+strong{color:var(--ink)}
+a{color:var(--brand)}
+.meta{font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="top" href="./"><img src="img/logo.webp" alt="" width="40" height="38">Blue Wave Infra</a>
+  <main class="card">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: 24 October 2026</p>
+
+    <p>Blue Wave Infra ("we", "us") runs bluewaveinfra.in. This policy explains what personal data we collect through the website, why we collect it and what you can do about it. It is written to meet the Digital Personal Data Protection Act, 2023.</p>
+
+    <h2>What we collect</h2>
+    <p>We only collect what you choose to send us through our forms (the callback bar, the project enquiry, the Park Planner and the quote pop-up):</p>
+    <ul>
+      <li>Your name and mobile / WhatsApp number</li>
+      <li>Your city or project location, if you give it</li>
+      <li>Project details such as venue type, products of interest, plot size, budget, timeline and any message you write</li>
+    </ul>
+    <p>We do not use advertising trackers. The site stores two small preferences in your browser (your light / dark theme choice and whether you closed the quote pop-up). These never leave your device.</p>
+
+    <h2>Why we use it</h2>
+    <p>We use your details only to respond to your enquiry: to call or message you, prepare layouts and quotations, and follow up on your project. We do not sell or rent your data, and we do not use it for unrelated marketing.</p>
+
+    <h2>Who receives it</h2>
+    <ul>
+      <li><strong>WhatsApp (Meta):</strong> when you submit a form, a pre-filled message opens in WhatsApp for you to send to our project desk.</li>
+      <li><strong>FormSubmit (formsubmit.co):</strong> a copy of your form is emailed to our office inbox through this service so that no enquiry is missed.</li>
+      <li><strong>Google Fonts:</strong> fonts on this site load from Google's servers, which receive your IP address as part of a normal web request.</li>
+    </ul>
+
+    <h2>How long we keep it</h2>
+    <p>We keep enquiry details while we are discussing or delivering your project, and for up to three years afterwards for our business records, unless the law requires longer. You can ask us to delete them sooner.</p>
+
+    <h2>Your rights</h2>
+    <p>You can ask to access, correct or erase your personal data, withdraw your consent, or raise a grievance. Contact us using the details below and we will respond within 30 days.</p>
+
+    <h2>Contact &amp; grievances</h2>
+    <p><strong>Amit Bhandare, Director</strong><br>
+    Blue Wave Infra, Puraniks Aldea Phase 1, Pune, Maharashtra 411045<br>
+    Email: <a href="mailto:amitbhandare1007@gmail.com">amitbhandare1007@gmail.com</a><br>
+    Phone / WhatsApp: <a href="tel:+918806324144">+91 88063 24144</a></p>
+
+    <h2>Changes</h2>
+    <p>If we update this policy, we will change the date at the top of this page.</p>
+  </main>
+</div>
+</body>
+</html>
